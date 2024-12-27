@@ -28,7 +28,7 @@ class ExceptionTranslatorTest {
                 .andExpect(jsonPath("$.status").value(404))
                 .andExpect(jsonPath("$.message").exists())
                 .andExpect(jsonPath("$.path").value("/api/v1/products/999"));
-    }
+    } 
 
 
     @Test
